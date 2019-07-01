@@ -5,6 +5,7 @@ list(APPEND WTF_SOURCES
 if (WIN32)
     list(APPEND WTF_SOURCES
         text/win/TextBreakIteratorInternalICUWin.cpp
+        text/win/StringWin.cpp
 
         win/CPUTimeWin.cpp
         win/DbgHelperWin.cpp

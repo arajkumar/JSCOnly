@@ -123,7 +123,7 @@ if ($buildDir && !isCMakeBuild()) {
     exit 1;
 }
 
-if (isWinCairo() || (isJSCOnly() && isWindows())) {
+if (isWinCairo() || (isJSCOnly() && isAnyWindows())) {
     (system("python Tools/Scripts/update-webkit-wincairo-libs.py") == 0) or die;
 }
 
