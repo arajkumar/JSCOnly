@@ -133,6 +133,12 @@ Tools/Scripts/build-webkit --wpe --debug
 
 For building WebKit on Windows, see the [wiki page](https://webkit.org/webkit-on-windows/).
 
+### Building JSCOnly Port
+
+```
+./Tools/Scripts/build-jsc --jsc-only --cmakeargs "-DICU_ROOT=`cygpath -m $PWD/WebKitLibraries/win/lib32`"
+```
+
 ## Running WebKit
 
 ### With Safari and Other macOS Applications
